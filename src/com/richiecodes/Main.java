@@ -6,9 +6,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-//        Cat myCat = new Cat(4, 2, "TestCat", true, true,
-//                "striped", false, true);
-//        myCat.speak();
 
         Dog myDog = new Dog(4, 60, "Lucky", "Dog", true, true,
                 "Golden Retriever", 5f);
