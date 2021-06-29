@@ -1,11 +1,6 @@
 package com.richiecodes;
 
 public class Animal {
-//    Field requirements: legs, size, isFixed, name
-//    include 1 field of your own creation
-//    Construction that takes at least the four required fields and initializes them.
-//    A speak method that outputs ("---")
-
     private String name, type;
     private boolean isFixed, isMammal;
     private int legs;

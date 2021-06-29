@@ -1,7 +1,6 @@
 package com.richiecodes;
 
 public class Cat extends Animal {
-
     String pattern;
     boolean wasStray, isOutdoorCat;
     String noise;
