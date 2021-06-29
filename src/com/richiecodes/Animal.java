@@ -19,12 +19,16 @@ public class Animal {
         return type;
     }
 
-    public boolean isFixed() {
-        return isFixed;
+    public String getIsFixed() {
+        if(!isFixed) return "No";
+
+        return "Yes";
     }
 
-    public boolean isMammal() {
-        return isMammal;
+    public String getIsMammal() {
+        if(!isMammal) return "No";
+
+        return "Yes";
     }
 
     public int getLegs() {

@@ -5,18 +5,19 @@ public class Dog extends Animal {
     private float snoutLength;
 
     public Dog(int legs, float size, String name, String type, boolean isFixed, boolean isMammal,
-               String breed, float snoutLength) {
+               String breed, float snoutLength, String furColor) {
         super(legs, size, name, type, isFixed, isMammal);
         this.breed = breed;
         this.snoutLength = snoutLength;
-    }
-
-    public void setFurColor(String furColor) {
         this.furColor = furColor;
     }
 
     public String getFurColor() {
-        return furColor;
+        if(furColor != null) {
+            return furColor;
+        } else {
+            return "N/A";
+        }
     }
 
     @Override
@@ -30,10 +31,10 @@ public class Dog extends Animal {
                 "\nType: " + this.getType() +
                 "\nLegs: " + this.getLegs() +
                 "\tSize: " + this.getSize() +
-                "cm\nNeutered: " + this.isFixed() +
-                "\nMammal: " + this.isMammal() +
+                "cm\nNeutered: " + this.getIsFixed() +
+                "\nMammal: " + this.getIsMammal() +
                 "\nFur Color: " + getFurColor() +
                 "\nBreed: " + breed +
-                "\nSnout Length: " + snoutLength + "\n");
+                "\nSnout Length: " + snoutLength + "cm\n");
     }
 }

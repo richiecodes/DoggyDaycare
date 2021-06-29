@@ -37,8 +37,8 @@ public class Cat extends Animal {
                 "\nType: " + this.getType() +
                 "\nLegs: " + this.getLegs() +
                 "\tSize: " + this.getSize() +
-                "cm\nNeutered: " + this.isFixed() +
-                "\nMammal: " + this.isMammal() +
+                "cm\nNeutered: " + this.getIsFixed() +
+                "\nMammal: " + this.getIsMammal() +
                 "\nPattern: " + pattern +
                 "\nOutdoor: " + isOutdoorCat + "\n");
     }
