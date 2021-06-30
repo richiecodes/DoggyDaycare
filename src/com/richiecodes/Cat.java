@@ -3,7 +3,7 @@ package com.richiecodes;
 public class Cat extends Animal {
     String pattern;
     boolean wasStray, isOutdoorCat;
-    String noise;
+    String noise = "";
 
     public Cat(int legs, int size, String name, String type, boolean isFixed, boolean isMammal,
                String pattern, boolean wasStray, boolean isOutdoorCat) {
@@ -24,10 +24,10 @@ public class Cat extends Animal {
 
     @Override
     public String speak() {
-        if (noise != null) {
-            return noise;
+        if (!noise.equals("")) {
+            return super.speak();
         } else {
-            return "(---)";
+            return noise;
         }
     }
 

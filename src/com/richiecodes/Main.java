@@ -20,6 +20,6 @@ public class Main {
         Daycare.displayAnimals(animalList);
 
         // Throws error
-//        Daycare.removeAnimal("test", animalList);
+        Daycare.removeAnimal("test", animalList);
     }
 }
